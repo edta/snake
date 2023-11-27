@@ -9,6 +9,9 @@ screen = Screen()
 
 screen.setup(width= 600, height=600)
 screen.bgcolor("gray")
+answer = screen.textinput("", "Are you Maga? Type yes or no")
+if answer == 'yes':
+    screen.bgpic("flag.gif")
 screen.title('Snake')
 screen.tracer(0)
 
